@@ -1,7 +1,14 @@
 *.pkl
 *.txt
-articles/
-highlightArticles/
-topdaily/
+*.pem
+dist.py
+data/Atlantic/articleIndex/
+data/Atlantic/articles/
+data/Medium/articles/
+data/Medium/train/
+data/Medium/test/
+data/Medium/topdaily/
+data/Medium/validArticles/
+*.pyc
 *test*
 *init*
