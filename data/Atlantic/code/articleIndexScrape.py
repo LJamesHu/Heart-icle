@@ -1,6 +1,4 @@
-from bs4 import BeautifulSoup
 import requests
-import datetime
 import random
 import time
 import os
@@ -23,7 +21,7 @@ def scrapeIndex(page):
         r = requests.get(link, headers=headers)
 
         # Write if article exists
-        with open('articleIndex/page' + format(page, '03') + '.html', 'wb') as f:
+        with open('../articleIndex/page' + format(page, '03') + '.html', 'wb') as f:
             f.write(r.content)
 
     # Print information on break, try again
@@ -35,7 +33,7 @@ def scrapeIndex(page):
 page = 1
 while page < 1000:
 
-    if os.path.exists('articleIndex/page' + format(page, '03') + '.html'):
+    if os.path.exists('../articleIndex/page' + format(page, '03') + '.html'):
         page += 1
         continue
 

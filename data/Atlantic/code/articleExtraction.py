@@ -5,9 +5,9 @@ import re
 
 
 # List all files in the directory to travel down
-articles = os.listdir('articles/')
+articles = os.listdir('../articles/')
 
-with open('articles.txt', 'wb') as af:
+with open('../articles.txt', 'wb') as af:
 
     for file in articles:
 
